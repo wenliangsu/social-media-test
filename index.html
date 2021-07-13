@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Social Media List(Advanced)</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="A11.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">All Friends</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="lovelist.html">Love list</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" id="search-form">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-input"/>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Show The Friends -->
+  <div class="container">
+    <div class="row" id="data-panel">
+      <!-- Friend List  -->
+      <div class="col-sm-6 col-md-3 col-lg-2">
+        <div class="mb-3">
+          <div class="card" style="width: 10em">
+            <img src="https://randomuser.me/api/portraits/men/88.jpg" class="card-img-top" alt="Loss personal photo" />
+            <div class="card-body">
+              <h5 class="personal-name text-center">Guillaume</h5>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-show-info" data-toggle="modal" data-target="#personal-modal">
+                Info
+              </button>
+              <button class="btn btn-info btn-add-list">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Pagination 分頁列-->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center" id="paginator">
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+    </ul>
+  </nav>
+
+  <!-- Friend info modal -->
+  <div class="modal fade" id="personal-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="personal-modal-name">Guillaume</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="personal-modal-body">
+          <div class="row">
+            <div class="col-sm-4" id="personal-modal-image">
+              <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="Loss the picture"
+                id="personal-modal-avatar" />
+            </div>
+            <div class="col-sm-8">
+              <p><em>Gender: </em><span id="personal-modal-gender">Male</span></p>
+              <p><em>Age: </em><span id="personal-modal-age">25</span></p>
+              <p><em>Birthday: </em><span id="personal-modal-day">1995-05-05</span></p>
+              <p><em>Email: </em><span id="personal-modal-mail">guillaume.vincent@example.com</span></p>
+              <p><em>Region: </em><span id="personal-modal-region">CH</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="A11.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
